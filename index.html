@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    <title>Hello, world!</title>
-      <style>
+    <style>
         .bg-custom{
     background-color: #203345;
 }
@@ -23,7 +21,7 @@
     margin-right: 0!important;
  }
 body{
-    font-family: sans-serif;
+    font-family: josefin, sans, poppins ;
 }
 #brand-img{
     margin-left:30px!important;
@@ -69,8 +67,8 @@ body{
 .head1{
     border-left: 2px solid white;
     color: white;
-    font-weight: 600;
-    font-size: 120%;
+    font-size: 160%;
+    font-weight: bold;
     padding: 10px;
     margin-top: 10px!important;
     border-right-width:10px;
@@ -157,7 +155,153 @@ body{
     height: 70px!important;
     cursor: pointer;
 }
-      </style>
+.active-link{
+ border-top:2px solid #72D2E0;   
+}
+#link2:hover{
+ border-top:2px solid red;   
+}
+#link3:hover{
+ border-top:2px solid yellow;   
+}
+#link4:hover{
+ border-top:2px solid lightgreen;   
+}
+#card0{
+		float: left;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.card-alt {
+		position: absolute;
+		bottom: -80px;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		margin: 0;
+		padding: 10px;
+		background: #00090090;
+		transition: 0.5s;
+	}
+    .card-alt p{
+        position: relative;
+        bottom: 10px;
+        margin-left: 80px;
+        font-size: 85%;
+        color: antiquewhite;
+        
+    }
+
+	.card-alt h2 {
+		float: left;
+		height: 50px;
+		width: 100%;
+        color: white;
+        font-weight: bold;
+	}
+
+	.card:hover .card-alt {
+		bottom: 0;
+	}
+#card0 img:hover{
+    opacity: 0.5;
+}
+.genere .card{
+    border-radius: 8px;
+    background-color: #203345;
+   
+}
+.genere .card-body{
+    
+    height: 20px!important;
+     border-bottom-left-radius: 8px!important;
+    border-bottom-right-radius: 8px;
+}
+.genere-txt{
+    font-weight: 400;
+    color: whitesmoke;
+   position: relative;
+    bottom:17px ;
+    font-size: 110%;
+}
+.genere-link{
+    position:relative;
+    left: 50%;
+    bottom: 22px;
+    font-size: 90%;
+}
+.genere-img{
+    border-radius: 5px;
+}
+#see-mre{
+background-color: #203345;
+    width: 100%;
+    border: none;
+    padding:5px;
+    color: gray;
+    font-size: 120%;
+    font-weight: bold;
+}
+.lower-bar{
+    margin-top: 30px;
+    width: 100%;
+    height:100%;
+    background-color: #203345;
+    padding: 10px;
+}
+.container{
+    width: 35%;
+    height: 100%;
+    margin: 0 auto;
+    
+   
+}
+.floatr{
+    
+    float: left;
+    padding: 0 5px;
+    
+}
+#about{
+    padding: 5px 0;
+    width:100%;
+    padding: 5px 0;
+    height: 100%;
+}
+#about a{
+    color: gray;
+    text-decoration: none;
+}
+#help{
+    margin: 0 auto;
+    padding: 5px 0;
+    width:90%;
+    height: 100%;
+}
+#help a{
+     color: gray;
+    text-decoration: none;
+    position: relative;
+    left: 5%;
+}
+#social{
+    margin: 0 auto;
+    width: 35%
+}
+#brnd-img{
+    position: relative;
+    left: 45%;
+}
+#top-rated{
+    width: 100%;
+}
+
+    </style>
+
+    <title>Hello, world!</title>
   </head>
   <body>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -172,13 +316,13 @@ body{
         <div class="collapse navbar-collapse" id="navbarContent">
             
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item custom-margin">
-                    <a class="nav-link link-custom" href="">Home</a>
+                <li class="nav-item custom-margin active-link">
+                    <a id="link1" class="nav-link link-custom" href="">Home</a>
                 </li>
-                <li class="nav-item custom-margin">
+                <li id="link2" class="nav-item custom-margin">
                     <a class="nav-link link-custom" href="">Movies</a>
                 </li>
-                <li class="nav-item custom-margin">
+                <li id="link3" class="nav-item custom-margin">
                     <a class="nav-link link-custom" href="">TV shows</a>
                 </li>
                 <li class="nav-item custom-margin">
@@ -197,14 +341,19 @@ body{
       <div id="main-wrapper">
          <div class="container-fluid">
              <div class="row">
-                 <div class="col-sm-2 floater">
-              <img  src="images/money%20heist%20poster.jpg" width="270px" height="440px">
+                 <div class="col-sm-3">
+              <img  src="images/money%20heist%20poster.jpg" width="100%" height="100%">
                  </div>
-                 <div class="col-sm-1"></div>
-                 <div class="col-sm-9 floater">
-                 <iframe src="https://www.youtube.com/embed/p_PJbmrX4uk" allowfullscreen width="100%" height="100%"></iframe>
+                 <div class="col-sm-9 ">
+                  <div id="card0" class="card">
+                      <img src="images/moneyheist-banner.jfif" width="100%" height="100%">
+			         <div class="card-alt">
+				<h2><img src="images/play%201.png" width="60px" height="60px">"Money Heist : Part 4"</h2>
+				<p>Lives are on the line as the professor's plan begins to unravel and the thieves must fend off enemies from both inside and outside the bank of spain</p>
+			         </div>
+		          </div>
                  </div>
-             </div>
+             </div>    
           </div>
             <div class="section">
             <span class="head1">Fan Favourites</span>
@@ -323,19 +472,123 @@ body{
            <div class="section">
             <span class="head1">Top Rated</span>
             </div>
-          <div class="container">
-                <div class="row">
+            <div id="top-rated"class="container">
                     
-                        <div class="card " >
-                          <img id="card5" class="card-img-top" src="images/avengers.jpg" alt="Card image cap" width="100%">
-                            <div id="bdy5" class="card-body">
-                                <h5 class="card-title"><img src="images/play.PNG" width="30px" height="30px">&nbsp "The Avengers: Marvel Studios" </h5>
-                                <span class="blw-txt">2 hr 33 min | 2019 |&nbsp &nbsp 4.5</span>
-                            </div>
+                      <div class="card mb-3">
+  <img class="card-img-top" src="images/avengers.jpg" alt="Card image cap">
+  <div id="bdy5" class="card-body">
+    <h5 class="card-title">"The Avengers : Marvel Studios"</h5>
+    <p class="card-text"><small class="text-muted"> 2 hr 33 min | &nbsp &nbsp 4.3</small></p>
+  </div>
+</div> 
+          </div>   
+                 
+              <div class="section">
+            <span class="head1">Choose by Genere</span>
+            </div>
+          <div class="container-fluid">
+                <div class="row genere">
+                    <div  class="col-sm-3">
+                    
+                       <div id="c1" class="card" >
+                          <img class="card-img-top genere-img" src="images/ddlj2.jpg" alt="Card image cap">
+                          <div id="b1" class="card-body">
+                              <span class="genere-txt">Romance</span>
+                              <span class="genere-link"><a href="">+Explore</a></span>
+                          </div>
                         </div>
+                        
                     </div>
-              </div>
+                    <div  class="col-sm-3">
+                    
+                       <div id="c2" class="card" >
+                          <img class="card-img-top genere-img" src="images/haraamkhor.jpg" alt="Card image cap">
+                          <div id="b2" class="card-body">
+                              <span class="genere-txt">Drama</span>
+                              <span class="genere-link"><a href="">+Explore</a></span>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    <div  class="col-sm-3">
+                    
+                       <div id="c3" class="card">
+                          <img class="card-img-top genere-img" src="images/avenge.jpg" width="100%" height="100%" alt="Card image cap">
+                          <div id="b3" class="card-body">
+                              <span class="genere-txt">Action</span>
+                              <span class="genere-link"><a href="">+Explore</a></span>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-3" >
+                    
+                       <div id="c4" class="card">
+                          <img class="card-img-top genere-img" src="images/phir%20hera%20feri.jpg" alt="Card image cap">
+                          <div id="b4"class="card-body">
+                              <span class="genere-txt">Comedy</span>
+                              <span class="genere-link"><a href="">+Explore</a></span>
+                          </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+          <div class="container-fluid">
+          <button id="see-mre">See more</button>
+          </div>
+    <div class="lower-bar">
+        
+        <div class="container">
+            <div id="social" class="row">
+                <div class="col-sm-3">
+                    <a href=""><img class="floatr" src="images/fb.PNG"></a>
+                </div>
+                <div class="col-sm-3">            
+                    <a href=""> <img class="floatr" src="images/twitter.PNG"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href=""><img class="floatr" src="images/imdb.PNG"></a>
+                </div>
+                <div class="col-sm-3">
+                    <a href=""><img class="floatr" src="images/insta.PNG"></a>
+                </div>
+            </div>
+        
+        
+            <div id="about" class="row">
+                <div class="col-sm-3">
+                    <a href="">About Flux</a>
+                </div>
+                <div class="col-sm-3">            
+                    <a href="">Career</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="">FAQ</a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="">Get the App</a>
+                </div>
+            </div>
+    
+       
+            <div id="help" class="row">
+                <div class="col-sm-4">
+                    <a href="">Terms & policies</a>
+                </div>
+                <div class="col-sm-4">            
+                    <a href="">Send Feedback</a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="">Help</a>
+                </div>
+            </div>
+            <div id="brnd-img" class="row">
+                <img src="images/brand.png" width="20%">
+            </div>
+        </div>
+    </div>
       </div>
+    
       <script>
          document.getElementById("card1").onmouseover = function(){
             document.getElementById("bdy1").style.display="block";
@@ -361,7 +614,35 @@ body{
           document.getElementById("card4").onmouseout = function(){
                document.getElementById("bdy4").style.display="none";
           }
-           
+         
+            document.getElementById("c1").onmouseover = function(){
+            document.getElementById("b1").style.display="block";
+        };
+          document.getElementById("c1").onmouseout = function(){
+               document.getElementById("b1").style.display="none";
+          }
+
+            document.getElementById("c2").onmouseover = function(){
+            document.getElementById("b2").style.display="block";
+        };
+          document.getElementById("c2").onmouseout = function(){
+               document.getElementById("b2").style.display="none";
+          }
+
+            document.getElementById("c3").onmouseover = function(){
+            document.getElementById("b3").style.display="block";
+        };
+          document.getElementById("c3").onmouseout = function(){
+               document.getElementById("b3").style.display="none";
+          }
+
+            document.getElementById("c4").onmouseover = function(){
+            document.getElementById("b4").style.display="block";
+        };
+          document.getElementById("c4").onmouseout = function(){
+               document.getElementById("b4").style.display="none";
+          }
+
       </script>
   </body>
 </html>
