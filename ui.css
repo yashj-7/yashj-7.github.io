@@ -48,7 +48,7 @@ body{
 }
 .container-fluid{
     width:86%!important;
-    height: 130%;
+    height: 100%;
     margin: 0 auto !important;
     padding-top: 20px;
     
@@ -190,7 +190,7 @@ body{
         
     }
 
-	.card-alt h2 {
+	.card-alt h3 {
 		float: left;
 		height: 50px;
 		width: 100%;
