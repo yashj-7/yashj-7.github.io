@@ -64,7 +64,12 @@ body{
     padding: 10px;
     margin-top: 10px!important;
     border-right-width:10px;
-   
+    position: relative;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove{
+    from {left: 0px;}
+    to {left: 100px;}
 }
 .section{
      width:1200px!important;
@@ -73,6 +78,7 @@ body{
     margin-top: 28px!important;
     margin-left: 110px!important;
     margin-bottom: 20px!important;
+    
 }
 .img:hover{
     transform: scale(1.1) ;
@@ -107,12 +113,13 @@ body{
 .card{
     border: none;
     background-color: #203345;
+    box-shadow: 5px 5px 5px black;
 }
 
 .image1:hover{
     transform: scale(1.3);
     z-index: 1;
-    opacity: 0.5;
+    opacity: 0.7;
     
 }
 .play{
@@ -265,6 +272,8 @@ background-color: #203345;
     width:100%;
     padding: 5px 0;
     height: 100%;
+    position: relative;
+    left: 10%;
 }
 #about a{
     color: gray;
@@ -272,9 +281,11 @@ background-color: #203345;
 }
 #help{
     margin: 0 auto;
-    padding: 5px 0;
+    padding: 3px 0;
     width:90%;
     height: 100%;
+    position: relative;
+    left: 10%;
 }
 #help a{
      color: gray;
@@ -287,8 +298,9 @@ background-color: #203345;
     width: 35%
 }
 #brnd-img{
+    padding-top: 8px;
     position: relative;
-    left: 45%;
+    left: 40%;
 }
 #top-rated{
     width: 100%;
@@ -302,8 +314,15 @@ background-color: #203345;
     top:-10px;
     left: 5%;
 }
-.play0{
+.plus{ 
+    float: right;
+}
+.shad{
+    box-shadow: 5px 5px 5px black;   
+}
+
+.ua{
+    float: right;
     position: relative;
-    top: 60%;
-    z-index: 1;
+    top: 15px;
 }
